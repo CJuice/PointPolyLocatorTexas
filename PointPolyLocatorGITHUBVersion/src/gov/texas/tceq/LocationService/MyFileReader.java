@@ -101,8 +101,6 @@ public class MyFileReader {
 	public void setCounty(String county) {
 		this.county = county;
 	}
-
-	//ToString
 	
 	public String getNullString() {
 		return nullString;
@@ -112,12 +110,14 @@ public class MyFileReader {
 		this.nullString = nullString;
 	}
 
+	//ToString
 	@Override
 	public String toString() {
 		return "MyFileReader [zip=" + zip + ", lepc=" + lepc + ", county=" + county + ", nullString=" + nullString
 				+ "]";
 	}
 	
+	//Hashcode and Equals
 	@Override
 	public int hashCode() {
 		final int prime = 31;
