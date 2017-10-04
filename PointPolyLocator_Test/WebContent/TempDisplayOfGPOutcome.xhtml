@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+
+<h:head ><p style="color:red">Users Parameters and Result From Call to Tier II Geoprocessing Script</p></h:head> 
+<body> 
+<h2>USER PARAMETERS:</h2>
+<h4>Latitude: #{sdo.latitude}</h4>
+<h4>Longitude: #{sdo.longitude}</h4>
+
+<h2>RESULTS</h2>
+<h4>County: #{sdo.nameTXCounty}</h4>
+<h4>LEPC: #{sdo.nameLEPC}</h4>
+<h4>Text File: <a href="#{sdo.filePath}" target="_blank">#{sdo.filePath}</a></h4>
+<h4>Error Message: #{sdo.errorMessage}</h4>
+<h4>Server Info: #{sdo.serverInfo}</h4>
+</body> 
+</html>
